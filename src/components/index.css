@@ -1,0 +1,44 @@
+.header {
+  grid-area: header;
+  background-color: #373737;
+  min-height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-menu {
+  grid-area: side-menu;
+  height: 100%;
+  background-color: #fff;
+}
+
+.button-group {
+  margin: 5px 15px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 10rem 3fr;
+  grid-template-rows: 1fr 5fr;
+  grid-template-areas: 'header header' 'side-menu page' 'side-menu page';
+}
+
+.page {
+  grid-area: page;
+  padding: 1rem;
+}
+
+.page-header {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.blog-logo {
+  max-width: 35px;
+  margin: 0 10px;
+}
+
+.blog-name {
+  margin: 0;
+}
